@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peach"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:fontFamily="@font/spartan_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toxic Comment Detector"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.178"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:fontFamily="@font/spartan_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:text="Enter Your comment which you want to analyse :"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="18dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter your comment here.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/slabo_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:id="@+id/text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Submit"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/text_display"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="Entered Text :"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/text_input_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/slabo_regular"
+            android:textSize="18dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/text_prediction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Prediction :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/prediction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/slabo_regular"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</ScrollView>
