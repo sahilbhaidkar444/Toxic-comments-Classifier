@@ -8,3 +8,5 @@
 
 ### Toxic Comments Classifier App :
 <img title="Toxic Comments Classifier" alt="App Icon" src="icons/ic_launcher.png">
+
+- To Download the official app please visit this link :
