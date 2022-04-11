@@ -7,6 +7,4 @@
 - We can integrate this model to filter the toxic comments on any social media platform.
 
 
-
-
-![Icon](icons/ic_launcher.png "Icon")
+<img title="Toxic Comments Classifier" alt="App Icon" src="icons/ic_launcher.png">
