@@ -1,4 +1,4 @@
-### Toxic Comments Classifier
+# Toxic Comments Classifier
 
 - This is my first machine learning project which is deployed on Android platform
 
@@ -6,5 +6,5 @@
 - This model will help you to classify the toxic comments on the social media.
 - We can integrate this model to filter the toxic comments on any social media platform.
 
-
+### Toxic Comments Classifier App :
 <img title="Toxic Comments Classifier" alt="App Icon" src="icons/ic_launcher.png">
