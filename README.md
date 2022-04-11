@@ -9,5 +9,5 @@
 ### Toxic Comments Classifier App :
 <img title="Toxic Comments Classifier" alt="App Icon" src="icons/ic_launcher.png">
 
-- To Download the official app please visit this link : '\n'
+- To Download the official app please visit this link : <br>
 https://github.com/sahilbhaidkar444/Toxic-comments-Classifier/blob/16cd7b08285a3fb86f49c9303aab892d0b12e445/APK/Comments%20Classifier.apk
